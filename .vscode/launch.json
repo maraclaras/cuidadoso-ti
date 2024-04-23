@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CuidadosoApplication<cuidadoso>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.ti2.cuidadoso.CuidadosoApplication",
+            "projectName": "cuidadoso",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
