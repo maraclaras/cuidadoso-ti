@@ -11,6 +11,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Objects;
+import java.util.Optional;;
 
 @Entity
 @Table(name = Task.TABLE_NAME)
@@ -53,9 +54,6 @@ public class Task {
         return this.user;
     }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
 
     public String getDescription() {
         return this.description;
@@ -70,8 +68,8 @@ public class Task {
         return this;
     }
 
-    public Task user(User user) {
-        setUser(user);
+    public Task user(Optional<User> user2) {
+        user(user2);
         return this;
     }
 
